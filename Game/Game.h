@@ -1,6 +1,6 @@
-#pragma once
+﻿#pragma once
 
-#include "Level3DRender/LevelRender.h"
+//#include "Level3DRender/LevelRender.h"
 
 class Player;
 
@@ -14,7 +14,7 @@ public:
 	void Render(RenderContext& rc);
 
 private:
-	ModelRender m_modelRender;
+	//ModelRender m_modelRender;
 	Vector3 m_pos;
 };
 

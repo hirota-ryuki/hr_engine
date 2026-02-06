@@ -1,10 +1,13 @@
 ﻿// hrEngine.cpp : スタティック ライブラリ用の関数を定義します。
 //
+#include "hrEnginePreCompile.h"
 
-#include "pch.h"
-#include "framework.h"
+#include "hrEngine.h"
 
-// TODO: これは、ライブラリ関数の例です
-void fnhrEngine()
+hrEngine::hrEngine()
+{
+}
+
+hrEngine::~hrEngine()
 {
 }
