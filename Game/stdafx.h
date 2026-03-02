@@ -3,4 +3,4 @@
 
 #include "hrEnginePreCompile.h"
 using namespace nsK2EngineLow;
-//using namespace nshrEngine;
+using namespace nshrEngine;

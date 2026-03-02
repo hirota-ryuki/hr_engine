@@ -2,7 +2,7 @@
 
 //#include "Level3DRender/LevelRender.h"
 
-class Player;
+//class Player;
 
 class Game : public IGameObject
 {
@@ -14,7 +14,6 @@ public:
 	void Render(RenderContext& rc);
 
 private:
-	//ModelRender m_modelRender;
 	Vector3 m_pos;
 };
 

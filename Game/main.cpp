@@ -4,8 +4,11 @@
 #include<InitGUID.h>
 #include<dxgidebug.h>
 
+
 #include "Game.h"
 
+
+#define hr_DEBUG 1;
 
 
 void ReportLiveObjects()

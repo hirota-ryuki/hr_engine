@@ -9,11 +9,13 @@ bool Game::Start()
 	return true;
 }
 
+
 void Game::Update()
 {
 	// g_renderingEngine->DisableRaytracing();
 	//m_modelRender.Update();
 }
+
 
 void Game::Render(RenderContext& rc)
 {

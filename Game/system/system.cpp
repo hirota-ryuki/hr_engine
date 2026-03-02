@@ -18,7 +18,7 @@ LRESULT CALLBACK MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	switch (msg)
 	{
 	case WM_DESTROY:
-		//スエンジンの破棄。
+		//エンジンの破棄。
 		PostQuitMessage(0);
 		break;	
 	default:
@@ -80,13 +80,17 @@ void InitGame(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, in
 {
 	//ウィンドウを初期化。
 	InitWindow(hInstance, hPrevInstance, lpCmdLine, nCmdShow, appName);
-	//k2エンジンの初期化。
-	//K2Engine::InitData initData;
+
+	//hrエンジンの初期化。
+    hrEngine::InitData initData;
 	//initData.isSoftShadow = true;
-	/*initData.frameBufferWidth = FRAME_BUFFER_W;
+	initData.frameBufferWidth = FRAME_BUFFER_W;
 	initData.frameBufferHeight = FRAME_BUFFER_H;
 	initData.hwnd = g_hWnd;
-	K2Engine::CreateInstance(initData);*/
+	hrEngine::CreateInstance(initData);
+
+    //DEBUG: 動作確認
+    nsK2EngineLow::GameObjectManager::CreateInstance();
 }
 //ウィンドウメッセージをディスパッチ。falseが返ってきたら、ゲーム終了。
 bool DispatchWindowMessage()

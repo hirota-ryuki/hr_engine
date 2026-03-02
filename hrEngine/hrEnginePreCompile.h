@@ -1,14 +1,11 @@
-﻿//#pragma once
+﻿#pragma once
 #define _CRT_SECURE_NO_WARNINGS
-//
-//
-//// #define COPY_RAYTRACING_FRAMEBUFFER		// 有効でレイトレの結果をフレームバッファに書き出す。
-//
 #include "k2EngineLowPreCompile.h"
-//using namespace nsK2EngineLow;
+using namespace nsK2EngineLow;
+#include "hrEngine.h"
+
 ////#include "collision/CollisionObject.h"
 //#include "graphics/RenderingEngine.h"
-//#include "k2Engine.h"
 //#include "geometry/AABB.h"
 //#include "graphics/IRenderer.h"
 //#include "graphics/ModelRender.h"
