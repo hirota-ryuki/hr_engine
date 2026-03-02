@@ -23,10 +23,7 @@ namespace nshrEngine {
         g_hrEngine = this;
         g_engine = &m_k2EngineLow;
 
-        /** レイトレーシングは使用しないが初期設定が必要なため作成 */
         raytracing::InitData raytracintInitData;
-        raytracintInitData.m_expandShaderResource = &m_renderingEngine.GetRaytracingLightData();
-        raytracintInitData.m_expandShaderResourceSize = sizeof(m_renderingEngine.GetRaytracingLightData());
 
         m_k2EngineLow.Init(
             initData.hwnd,

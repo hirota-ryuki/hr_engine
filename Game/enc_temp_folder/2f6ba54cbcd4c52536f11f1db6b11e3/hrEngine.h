@@ -60,16 +60,10 @@ namespace nshrEngine {
         void Execute();
 
     private:
-        K2EngineLow m_k2EngineLow;
-        /**
-         * NOTE:もしCreateInstanceが複数回呼ばれても一つのポインタに行き着くようにstatic
-         */
+        K2EngineLow m_k2EngineLow;	
         static hrEngine* m_instance;
     };
 
-    /**
-     * グローバルなアクセスポイント 
-     * NOTE:他のcppで使えないようにexternで定義
-     */
+    /** グローバルなアクセスポイント */
     extern hrEngine* g_hrEngine;
 }
